@@ -1,8 +1,17 @@
 server:
   port: 8484
 
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+
 app:
   source: C:/training/input?fileName=Camel_test.txt
   destination: C:/training/output
+  messageSource: C:/training/input?fileName=JMSMessage.txt
+  DestinationFile: C:/training/output
 
-
+camel:
+  component:
+    activemq:
+      broker-url: tcp://localhost:61616
