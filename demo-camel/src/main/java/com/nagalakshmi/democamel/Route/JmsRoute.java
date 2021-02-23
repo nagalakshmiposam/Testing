@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 public class JmsRoute extends RouteBuilder {
     @Value("${app.messageSource}")
     private String msgSource;
+    
     @Value("${app.DestinationFile}")
     private String Destinationfile;
 

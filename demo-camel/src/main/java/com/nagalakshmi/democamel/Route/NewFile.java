@@ -22,7 +22,7 @@ public class NewFile extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-//        fileCopier();
+        fileCopier();
         renameTheFile();
     }
 

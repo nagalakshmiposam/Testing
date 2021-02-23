@@ -20,7 +20,7 @@ public class MyProcessor implements Processor {
         logger.info("message body from incoming exchange,{}", messageBody);
         logger.info("exchange properties, {}", exchangeproperties);
         messageBody = messageBody.concat("updating the body using processor");
-        logger.info("updated the meassage body exchange, {}", messageBody);
+        logger.info("updated the message body exchange, {}", messageBody);
         exchange.getIn().setBody(messageBody);
 
 
